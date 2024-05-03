@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: verdana;
+
+}
+
+/*===============================side-bar styling======================================*/
+.sidebar{
+    position: absolute;
+    left: 0;
+    top: 4.5rem;
+    width: 230px;
+    height: 100vh;
+    overflow-y: auto;
+    background: rgb(7, 125, 184);
+    transition: all .5s ease;
+
+}
+header{
+    position: absolute;
+    left: 50%;
+    top: 1rem;
+    font-size: 22px;
+    color: wheat;
+    text-align: center;
+    line-height: 70px;
+}
+.sidebar .list .itemLink{
+    display: block;
+    height: 100%;
+    line-height: 47px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(249, 244, 244);
+    transition: .4s;
+    list-style: none;
+    position: relative;
+}
+.hov{
+    background: #52abd4;
+    padding-left: 25px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+.sublist .sublink:hover{
+    background: #52abd4;
+    margin-left: 25px;
+    transition: 1.5s;
+}
+
+.item:hover .itemLink{
+    padding-left: 40px;
+    background-color: #57a4ca;
+    transition: 1.2s;
+}
+.sublist{
+    background: rgb(9, 109, 159);
+    height: auto;
+    width: 100%;
+    transition: all 2.3s;
+
+    
+}
+.sidebar .list .itemLink:active{
+    background: rgb(236, 236, 234);
+}
+
+.sidebar .list  .itemLink #icon{
+    margin-right: 15px;
+    color: white;
+}
+
+.sublist .sublink{
+    display: block;
+    height: 100%;
+    line-height: 29px;
+    font-size: 14px;
+    color: white;
+    padding-left: 90px;
+    box-sizing: border-box;
+    border-top:  1px solid rgba(228, 221, 221, 0.1);
+    border-bottom: 1px solid rgb(242, 238, 238);
+    transition: .4s;
+    list-style: none;
+    transition: all 1s;
+    text-decoration: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.fa-plus, .fa-layer-group{  
+    margin-left: 5px;
+}
+i{
+    font-size: 1.5rem;
+}
+.sublist i{
+    padding: 0 10px 0 0;
+    font-size: 1.2rem;
+}
+/*==================================nav-bar styling ======================================*/
+.horizontal{
+    width: 100%;
+    height: 4.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(7, 125, 184);
+    
+}
+
+section{
+    
+    position: absolute;
+    right: 0;
+    top: 4.5rem;
+    left: 230px;
+    max-height: 100vh;
+    background: rgb(119, 128, 209);
+    
+}
+#angles{
+
+   position: absolute;
+   bottom: 6.5px;
+   right: 10px;
+   font-size: 1.5rem;
+}
+#usser{
+    position: absolute;
+    bottom: 6.5px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: white; 
+    font-size: 2.5rem;
+}
+.user-box{
+    display: none;
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    background: rgba(238, 232, 232, 0.8);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: .5rem;
+    text-align: center;
+    width: 19rem;
+    transform-origin: top right;
+    line-height: 2;
+
+}
+.fa-user:hover .user-box{
+    display: block;
+}
+
+/*=========================================Dasboard cards styling=================================*/
+.cards{
+    padding: 5px 5px;
+    display: inline-block;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    width: 220px;
+    height: 120px;
+    background: rgb(158, 169, 219);
+    margin: 10px 5px;
+    display: flex;
+    align-items: center;
+    
+    box-shadow:  4px 7px rgba(0, 0, 0, 0.2), 0 6px 20px 0 ;
+    border-radius: 10px;
+}
+.box{
+    text-align: center;
+    padding-left: 2rem;
+}
+/* ====================================== dashboard chart stylling==========================================*/
+
+.content2{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom:3rem;
+}
+
+.recent{
+    height: 320px;
+    width: 600px;
+    flex: 5;
+    background: rgb(193, 200, 228);
+    margin: 0 25px 25px 25px;
+    box-shadow: 4px 7px rgba(0, 0, 0, 0.2), 0 6px 20px 0 ;
+}
+.recents{
+    height: 320px;
+    width: 350px;
+    flex: 5;
+    background: rgb(193, 200, 228);
+    margin: 0 25px 25px 25px;
+    box-shadow: 4px 7px rgba(0, 0, 0, 0.2), 0 6px 20px 0 ;
+}
+.content
+{
+    background: #e3e3eb;
+   
+  
+}

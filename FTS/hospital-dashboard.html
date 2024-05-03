@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="\source\fontawesome-free-5.15.4-web\fontawesome-free-5.15.4-web\css\all.css">
+    <script src="\fts\js\jquery-3.7.1.min.js"></script>
+    <script src="\fts\js\chart.umd.js"></script>
+</head>
+<body>
+    <nav class="horizontal">
+        <header><i class="fas fa-shopping-cart"></i>F.T.S</header>
+            <i class="fas fa-user" id="usser"  onclick="displayLog()"></i>
+    
+        <div class="user-box">
+            <p>username<span></p>
+            <p>role</span></p>
+                <button type="submit" class="logout-btn">Log Out</button>
+                .g6<button onclick="cancelLog()" class="cancel">X</button>
+        </div>
+            <script>
+                function displayLog(){
+                    document.querySelector('.user-box').style.display = 'block';
+                }  
+                function cancelLog(){
+                    document.querySelector('.user-box').style.display = 'none';
+                } 
+            </script>
+        </nav>
+    <div class="sidebar">
+        <ul class="list">
+            <li class="item "><a href="main-dashboard.html" class="itemLink "><i class="fas fa-tachometer-alt" id="icon"></i>MAIN DASHBOARD</a></li>
+            <li class="item "><a href="main-dashboard.html" class="hov itemLink "><i class="fas fa-hospital" id="icon"></i>DASHBOARD</a></li>
+            <li class="item"><a href="hospital-dashboard.html" class="itemLink"><i class="fas fa-dollar-sign" id="icon"></i><i class="fa fa-money" aria-hidden="true"></i>SALES</a>
+            <li class="item"><a href="addstock.html" class="itemLink"><i class="fas fa-product" id="icon"></i>STOCK IN      <i class="fas fa-angle-right" id="angles"></i></a></li>
+            <li class="item"><a href="users.html" class="itemLink"><i class="fas fa-users" id="icon"></i>LOW STOCK</a></li>
+            <li class="item"><a href="users.html" class="itemLink"><i class="fas fa-users" id="icon"></i>PHARMACY</a></li>
+            <li class="item"><a href="users.html" class="itemLink"><i class="fas fa-users" id="icon"></i>EXPIRED STOCK</a></li>
+            <li class="item"><a href="users.html" class="itemLink"><i class="fas fa-users" id="icon"></i>ACCOUNT</a></li>
+            <li class="item"><a href="login.html" class="itemLink"><i class="fas fa-sign-out-alt" id="icon"></i>LOg Out</a></li>
+
+        </ul>
+    </div> 
+    <section>
+        <div class="cards">
+            <div class="card" style="background: rgb(224, 142, 152);">
+                    <div class="box">
+                        <i class="fas fa-qrcode" id="icon"></i>
+                        <h3 >Items</h3>
+                        <h1>00</h1>
+                    </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card" style="background: rgb(233, 233, 147);">
+                    <div class="box">
+                        <i class="fas fa-qrcode" id="icon"></i>
+                        <h3 >Items</h3>
+                        <h1>00</h1>
+                    </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card" style="background: rgb(218, 141, 175);">
+                    <div class="box">
+                        <i class="fas fa-qrcode" id="icon"></i>
+                        <h3 >Items</h3>
+                        <h1>00</h1>
+                    </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card" style="background: rgb(198, 136, 216);">
+                    <div class="box">
+                        <i class="fas fa-qrcode" id="icon"></i>
+                        <h3 >Items</h3>
+                        <h1>00</h1>
+                    </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card" style="background: rgb(152, 131, 209);">
+                    <div class="box">
+                        <i class="fas fa-qrcode" id="icon"></i>
+                        <h3 >Items</h3>
+                        <h1>00</h1>
+                    </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card" style="background: rgb(124, 234, 208);">
+                    <div class="box">
+                        <i class="fas fa-qrcode" id="icon"></i>
+                        <h3 >Items</h3>
+                        <h1>00</h1>
+                    </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card" style="background: rgb(125, 110, 197);">
+                    <div class="box">
+                        <i class="fas fa-qrcode" id="icon"></i>
+                        <h3 >Items</h3>
+                        <h1>00</h1>
+                    </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
