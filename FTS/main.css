@@ -3,7 +3,8 @@
     padding: 0;
 }
 body{
-    font-family: verdana;
+    /* font-family: verdana; */
+    font-family: 'Times New Roman', Times, serif;
 
 }
 
@@ -13,11 +14,7 @@ body{
     left: 0;
     top: 4.5rem;
     width: 230px;
-<<<<<<< HEAD
     height: 100%; 
-=======
-    height: 100vh;
->>>>>>> 56f7c962c7afa8709268bf299585ed406044d477
     overflow-y: auto;
     background: rgb(7, 125, 184);
     transition: all .5s ease;
@@ -98,12 +95,6 @@ header{
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
-<<<<<<< HEAD
-=======
-.fa-plus, .fa-layer-group{  
-    margin-left: 5px;
-}
->>>>>>> 56f7c962c7afa8709268bf299585ed406044d477
 i{
     font-size: 1.5rem;
 }
@@ -122,19 +113,6 @@ i{
     
 }
 
-<<<<<<< HEAD
-=======
-section{
-    
-    position: absolute;
-    right: 0;
-    top: 4.5rem;
-    left: 230px;
-    max-height: 100vh;
-    background: rgb(119, 128, 209);
-    
-}
->>>>>>> 56f7c962c7afa8709268bf299585ed406044d477
 #angles{
 
    position: absolute;
@@ -169,7 +147,6 @@ section{
     display: block;
 }
 
-<<<<<<< HEAD
 /*====================================--------SECTION TO BE USED ACROSS THE WHOLE SYSTEM-----=========================================================================*/
 section{
     
@@ -183,9 +160,6 @@ section{
 }
 
 /*================================================----cards----==================================*/
-=======
-/*=========================================Dasboard cards styling=================================*/
->>>>>>> 56f7c962c7afa8709268bf299585ed406044d477
 .cards{
     padding: 5px 5px;
     display: inline-block;
@@ -193,26 +167,17 @@ section{
     flex-wrap: wrap;
 }
 .card{
-<<<<<<< HEAD
     width: 290px;
     height: 140px;
     background: rgb(196, 215, 227);
     margin: 10px 5px;
     display: inline-flex;
-=======
-    width: 220px;
-    height: 120px;
-    background: rgb(158, 169, 219);
-    margin: 10px 5px;
-    display: flex;
->>>>>>> 56f7c962c7afa8709268bf299585ed406044d477
     align-items: center;
     
     box-shadow:  4px 7px rgba(0, 0, 0, 0.2), 0 6px 20px 0 ;
     border-radius: 10px;
 }
 .box{
-<<<<<<< HEAD
     align-items: center;
     justify-content: center;
     background-color: rgb(7, 125, 184);
@@ -239,11 +204,6 @@ section{
   font-size: 2rem;
 }
 
-=======
-    text-align: center;
-    padding-left: 2rem;
-}
->>>>>>> 56f7c962c7afa8709268bf299585ed406044d477
 /* ====================================== dashboard chart stylling==========================================*/
 
 .content2{
@@ -275,7 +235,6 @@ section{
     background: #e3e3eb;
    
   
-<<<<<<< HEAD
 }
 
 
@@ -429,7 +388,7 @@ section{
 
 /*----=========================================form styling====================================*/
 
-.edit-form1, .edit-form2, .edit-form3, form{
+.edit-form1, .edit-form2, .edit-form3{
     
     display: none;
     position: fixed;
@@ -556,6 +515,15 @@ width: 80%;
 margin: .5rem;
 }
 
-=======
+.man{
+    height: 30px;
+    width: 50%;
+    padding: 2rem;
+    background-color: black;
+    
 }
->>>>>>> 56f7c962c7afa8709268bf299585ed406044d477
+.man input{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 23px;
+}
