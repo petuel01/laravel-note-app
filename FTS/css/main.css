@@ -109,7 +109,7 @@ i{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgb(248, 249, 250);
+    background-color: rgb(16, 102, 182);
     
 }
 
@@ -354,6 +354,7 @@ section{
 #edit{
     background: blue;
     width: 2.5rem;
+    margin: 0;
 
 }
 #del{
