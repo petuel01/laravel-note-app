@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="\source\fontawesome-free-5.15.4-web\fontawesome-free-5.15.4-web\css\all.css">
+    <title>school-dashboard</title>
+    <link rel="stylesheet" href="\fts\css\main.css">
+    <link rel="stylesheet" href="\fts\source\fontawesome-free-5.15.4-web\fontawesome-free-5.15.4-web\css\all.css">
     <script src="\fts\js\jquery-3.7.1.min.js"></script>
-    <script src="\fts\js\chart.umd.js"></script>
+    <script src="\fts\chart.umd.js"></script>
 </head>
 <body>
     <nav class="horizontal">
@@ -18,7 +18,7 @@
             <p>username<span></p>
             <p>role</span></p>
                 <button type="submit" class="logout-btn">Log Out</button>
-                .g6<button onclick="cancelLog()" class="cancel">X</button>
+                <button onclick="cancelLog()" class="cancel">X</button>
         </div>
             <script>
                 function displayLog(){
@@ -32,15 +32,12 @@
     <div class="sidebar">
         <ul class="list">
             <li class="item "><a href="main-dashboard.html" class="itemLink "><i class="fas fa-tachometer-alt" id="icon"></i>MAIN DASHBOARD</a></li>
-            <li class="item "><a href="main-dashboard.html" class="hov itemLink "><i class="fas fa-hospital" id="icon"></i>DASHBOARD</a></li>
-            <li class="item"><a href="hospital-dashboard.html" class="itemLink"><i class="fas fa-dollar-sign" id="icon"></i><i class="fa fa-money" aria-hidden="true"></i>SALES</a>
-            <li class="item"><a href="addstock.html" class="itemLink"><i class="fas fa-product" id="icon"></i>STOCK IN      <i class="fas fa-angle-right" id="angles"></i></a></li>
-            <li class="item"><a href="users.html" class="itemLink"><i class="fas fa-users" id="icon"></i>LOW STOCK</a></li>
-            <li class="item"><a href="users.html" class="itemLink"><i class="fas fa-users" id="icon"></i>PHARMACY</a></li>
-            <li class="item"><a href="users.html" class="itemLink"><i class="fas fa-users" id="icon"></i>EXPIRED STOCK</a></li>
-            <li class="item"><a href="users.html" class="itemLink"><i class="fas fa-users" id="icon"></i>ACCOUNT</a></li>
-            <li class="item"><a href="login.html" class="itemLink"><i class="fas fa-sign-out-alt" id="icon"></i>LOg Out</a></li>
+            <li class="item "><a href="main-dashboard.html" class="hov itemLink "><i class="fas fa-school" id="icon"></i>DASHBOARD</a></li>
+            <li class="item"><a href="hospital-dashboard.html" class="itemLink"><i class="fas fa-list" id="icon"></i>VIEW  RECORDS</a>
+                <li class="item"><a href="school-dashboard.html" class="itemLink"><i class="fas fa-plus" id="icon"></i>ADD RECORDS</a>
+                    <li class="item"><a href="expense.html" class="itemLink"><i class="fas fa-money-alt" id="icon"></i>EXPENCES</a>
 
+            <li class="item"><a href="logout.php" class="itemLink"><i class="fas fa-sign-out-alt" id="icon"></i>LOg Out</a></li>
         </ul>
     </div> 
     <section>
@@ -50,7 +47,7 @@
                     <i class="fas fa-qrcode" id="icon1"></i>
                 </div>
                 <div class="box2">
-                    <h3 >Total Stock</h3>
+                    <h3 >Total stock</h3>
                     <h1>00</h1>
                 </div>
             </div>
@@ -59,7 +56,7 @@
                     <i class="fas fa-qrcode" id="icon1"></i>
                 </div>
                 <div class="box2">
-                    <h3 >Daily Sales</h3>
+                    <h3 >Sales</h3>
                     <h1>00</h1>
                 </div>
             </div>
@@ -68,30 +65,29 @@
                     <i class="fas fa-qrcode" id="icon1"></i>
                 </div>
                 <div class="box2">
-                    <h3 >Weekly Sales</h3>
+                    <h3 >Daily salle</h3>
                     <h1>00</h1>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
                     <i class="fas fa-qrcode" id="icon1"></i>
-                </div>
-                <div class="box2">
-                    <h3 >Low Stock</h3>
-                    <h1>00</h1>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <i class="fas fa-user" id="icon1"></i>
                 </div>
                 <div class="box2">
                     <h3 >Suppliers</h3>
                     <h1>00</h1>
                 </div>
-            </div>  
-
-        </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-qrcode" id="icon1"></i>
+                </div>
+                <div class="box2">
+                    <h3 >Stock out</h3>
+                    <h1>00</h1>
+                </div>
+            </div>
+        </div>                  
     </section>
 </body>
 </html>

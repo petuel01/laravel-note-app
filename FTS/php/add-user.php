@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO users (username, password, role) VALUES ('$username', '$password', '$role')";
     
     if ($conn->query($sql) === TRUE) {
-        header("location: add-user.php");
+        header("location: users.php");
         echo "<script>showDanger();</script>";
         exit();
     } else {
