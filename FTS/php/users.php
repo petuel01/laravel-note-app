@@ -8,11 +8,11 @@ include 'conect.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="\source\fontawesome-free-5.15.4-web\fontawesome-free-5.15.4-web\css\all.css">
+    <title>user-mgt</title>
+    <link rel="stylesheet" href="\fts\css\main.css">
+    <link rel="stylesheet" href="\fts\source\fontawesome-free-5.15.4-web\fontawesome-free-5.15.4-web\css\all.css">
     <script src="\fts\js\jquery-3.7.1.min.js"></script>
-    <script src="chart.umd.js"></script>
+    <script src="\fts\chart.umd.js"></script>
 </head>
 
 <body>
@@ -91,8 +91,9 @@ include 'conect.php';
                                     <td>'.$row['password'].'</td>
                                     <td>'.$row['role'].'</td>
                                     <td>
-                                    <button id="edit"><a href="users.php?edit='.$row['id'].'" class="edit">edit</a></button>
-                                    <button id="del"><a href="users.php?delete='.$row['id'].'" class="delete" onclick="return confirm("Do you really want to delete this product");">delete</a></button>
+                                    <button id="edit"><a href="users.php?edit='.$row['id'].'" class="edit"><i class="fas fa-edit" style="color: white;" aria-hidden="true"></a></button>
+                                    <button id="edit"><a href="users.php?message='.$row['id'].'" class="edit"><i class="fa fa-comment" style="color: white;" aria-hidden="true"></i></a></button>
+                                    <button id="del"><a href="users.php?delete='.$row['id'].'" class="delete" onclick="return confirm("Do you really want to delete this product");"><i class="fa fa-trash" style="color: white;" aria-hidden="true"></a></button>
                                 </td>
                                     </tr>
                             </tbody>';

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="\source\fontawesome-free-5.15.4-web\fontawesome-free-5.15.4-web\css\all.css">
+    <title>add new members</title>
+    <link rel="stylesheet" href="\fts\css\main.css">
+    <link rel="stylesheet" href="\fts\source\fontawesome-free-5.15.4-web\fontawesome-free-5.15.4-web\css\all.css">
     <script src="\fts\js\jquery-3.7.1.min.js"></script>
-    <script src="chart.umd.js"></script>
+    <script src="\fts\chart.umd.js"></script>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
                 <li class="item"><a href="school-dashboard.html" class="itemLink"><i class="fas fa-school" id="icon"></i>SCHOOL</a>
                     <li class="item"><a href="users.php" class="itemLink"><i class="fas fa-users" id="icon"></i>MANAGE USERS</a>
 
-            <li class="item"><a href="\fts\php\logout.php" class="itemLink"><i class="fas fa-sign-out-alt" id="icon"></i>LOg Out</a></li>
+            <li class="item"><a href="logout.php" class="itemLink"><i class="fas fa-sign-out-alt" id="icon"></i>LOg Out</a></li>
         </ul>
     </div> 
     <section>
@@ -59,7 +59,6 @@
             </select>
             <button type="submit" name="submit" class="sava" >Save</button>
             <button type="button" class="sav" onclick="cancelEdit()">Cancel</button>
-
         </form>
    </section>
 </body>
