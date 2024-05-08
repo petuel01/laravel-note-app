@@ -516,14 +516,38 @@ margin: .5rem;
 }
 
 .man{
-    height: 30px;
-    width: 50%;
     padding: 2rem;
-    background-color: black;
-    
+    display: flex;
+    flex-direction: column;
+    grid-template: 1fr 1fr 1fr 1fr;
 }
 .man input{
+    border: none;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 23px;
+}
+.man label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+}
+.man h1{
+    margin-left: 40%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+.man button{
+    width: 90px;
+    padding: 1rem;
+    margin: 30px;
+     border: none;
+     margin-left: 40%;
+     border-radius: 0.9rem;
+     font-size: 23px;
+    font-weight: bold;
+     font-family: 'Times New Roman', Times, serif;
+     cursor: pointer;
 }
