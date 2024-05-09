@@ -254,7 +254,7 @@ section{
     box-shadow:  4px 7px rgba(0, 0, 0, 0.2), 0 6px 20px 0 ;
  }
  .haed{
-    color: gray;
+    color: rgb(17, 203, 245);
     margin: 1rem;
     font-size: 2rem;
     font-weight: bolder;
@@ -263,7 +263,7 @@ section{
     margin-bottom: 2rem;   
    }
    .add{
-       background: rgb(24, 22, 94);
+       background: rgb(25, 136, 246);
        height: 3rem;
        color: white;
        text-decoration: none;
@@ -328,7 +328,11 @@ section{
 
    /*==================================table styling=============================*/
    table{
-       width: 90%;
+       width: 100%;
+   }
+   tr{
+    border-bottom: 1px solid rgb(47, 161, 210);
+    width: 100%;
    }
    th{
        color: grey;
@@ -341,26 +345,10 @@ section{
     padding-top: .5rem;
     margin-bottom: .5rem;
     color: grey;
-    border-bottom: 1px solid rgb(47, 161, 210);
+    
 }
 
-#edit, #del{
-    height: 2.7rem;
-    color: white;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-    border: none;
-}
-#edit{
-    background: blue;
-    width: 2.5rem;
-    margin: 0;
 
-}
-#del{
-    background: red;
-    width: 3.5rem;
-}
 
 /*---============================confirmation dialog===================================*/
  .confirmation-dialog {
@@ -437,23 +425,7 @@ label{
     margin: 5px;
 }
 /*======================================form buttons===========================*/
-.sav, .sava{
-    color: white;
-    width: 3.5rem;
-    height: 2.5rem;
-    padding: 5px;
-    margin: 6px;
-    border: none;
-    
-}
-.sav{
-    
-    background: red;
-}
-.sava{
 
-    background: blue;
-}
 #danger{
   display: none; 
   background: green; 
@@ -500,10 +472,21 @@ width: 30%;
 cursor: pointer;
 color: white;
 }
-.delete, 
-.edit {
-color: rgb(5, 5, 5);
+#edit, #del{
+    height: 2.7rem;
+    color: white;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: none;
+}
+#edit{
+    background: blue;
+    width: 2.5rem;
 
+}
+#del{
+    background: red;
+    width: 3.5rem;
 }
 .btn{
 background: red;

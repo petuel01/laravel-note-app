@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +12,7 @@
 </head>
 <body>
     <nav class="horizontal">
-        <header><i class="fas fa-shopping-cart"></i>F.T.S</header>
+        <header><i class="fas fa-shopping-cart"></i>HOSPITAL-DASHBOARD</header>
             <i class="fas fa-user" id="usser"  onclick="displayLog()"></i>
     
         <div class="user-box">
@@ -36,8 +37,8 @@
             <li class="item"><a href="hospital-dashboard.html" class="itemLink"><i class="fa fa-money" aria-hidden="true" id="icon"></i>SALES</a>
             <li class="item"><a href="stockin.html" class="hov itemLink" ><i class="fa fa-product-hunt" id="icon"></i>STOCK IN<i class="fas fa-angle-down" id="angles"></i></a>
               <ul class="sublist">
-                <li class="item"><a href="addstock.html" class=" hov sublink"><i class="fa fa-plus-circle" id="icon"></i>Add New</a></li>
-                <li class="item"><a href="viewstock.html" class="sublink"><i class="fas fa-users" id="icon"></i>View Stock</a></li>
+                <li class="item"><a href="addstock.php" class=" hov sublink"><i class="fa fa-plus-circle" id="icon"></i>Add New</a></li>
+                <li class="item"><a href="viewstock.php" class="sublink"><i class="fas fa-users" id="icon"></i>View Stock</a></li>
               </ul>
             </li>
             <li class="item"><a href="users.html" class="itemLink"><i class="fas fa-users" id="icon"></i>LOW STOCK</a></li>
@@ -49,21 +50,34 @@
         </ul>
     </div> 
     <section>
-        <form class="man">
+    <h4 class="haed">Manage Products</h4>
+    <button class="add"><a href="viewstock.php" style="color: white;">view store</a></button>
+        <form class="man" action="addItem.php" method="post">
             <h1>Add New Item</h1>
             <label for="name">Name of Good:</label>
-            <input type="text" id="Itemname" name="ItemName" placeholder="Enter Item Name" required>
+            <input type="text" id="Itemname" name="name" placeholder="Enter Item Name" required>
+            <label for="name">Good price:</label>
+            <input type="number" id="Quantity" name="price" placeholder="Enter Item Quantity" required>
             <label for="name">Good Quantity:</label>
-            <input type="number" id="Quantity" name="Quantity" placeholder="Enter Item Quantity" required>
+            <input type="number" id="Quantity" name="quantity" placeholder="Enter Item Quantity" required>
             <label for="name">Date of Delivery:</label>
-            <input type="date" id="dateBought" name="dateBought" required>
+            <input type="date" id="dateBought" name="date" required>
             <label for="name">Expired Date of Good:</label>
-            <input type="date" id="ExpiredDate" name="ExpiredDate" required>
-            <label for="damaged">Damaged Good:</label>
-            <input type="text" name="damaged" id="damaged" placeholder="Enter damaged good name">
+            <input type="date" id="ExpiredDate" name="exdate" required>
             <label for="time">Arrival Time of Goods:</label>
             <input type="time" name="time" id="time" required>
-            <button>Enter</button>
+            <button type="submit" name="submit">Save Changes</button>
+            <div id="danger">item added successfully   <span onclick="hideDanger();">X</span></div>
+        <script>
+            function showDanger() {
+                document.getElementById('danger').style.display = 'block';
+            }
+
+            function hideDanger() {
+                document.getElementById('danger').style.display = 'none';
+            }
+           
+        </script>
         </form>
     </section>
 </body>
