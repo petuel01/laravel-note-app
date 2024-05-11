@@ -8,7 +8,7 @@
              $date = $_POST['date'];
              $time = $_POST['time'];
              $exdate =  $_POST['exdate'];
-
+             //save to database
              $update_query = mysqli_query($conn, "UPDATE items SET name='$name', price='$price',
              quantity='$quantity', date='$date', time='$time', exdate='$exdate' WHERE id='$update_id' ") or die('query failed');
       
