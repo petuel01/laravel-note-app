@@ -42,6 +42,11 @@
         </ul>
     </div> 
     <section>
+    <div class="head-pro">
+            <h4 class="haed">Manage Sales</h4>
+            <button class="add"><a href="users.php" style="color: white;">view all users</a></button>';
+        </div>
+    <div class="main-products">
         <form action="add-user.php" method="POST" id="editForm" style="display: grid;">
             <label >Name:</label>
             <input type="text" id="name" name="Name" placeholder="enter new members name" required>
@@ -52,14 +57,15 @@
                 <option value="admin">admin</option>
                 <option value="principal">principal</option>
                 <option value="matron">matron</option>
-                <option value="pharmacist">staff</option>
-                <option value="accountant">user</option>
-                <option value="busar">user</option>
-                <option value="store-accountant">user</option>
+                <option value="pharmacist">pharmacist</option>
+                <option value="accountant">accountant</option>
+                <option value="busar">busar</option>
+                <option value="store-accountant">store-accountant</option>
             </select>
-            <button type="submit" name="submit" class="sava" >Save</button>
-            <button type="button" class="sav" onclick="cancelEdit()">Cancel</button>
+            <button type="submit" name="submit" class="sava" id="edit" >Save</button>
+            <button type="button" class="sav" onclick="cancelEdit()" id="del">Cancel</button>
         </form>
+    </div>
    </section>
    
 </body>

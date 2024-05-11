@@ -42,18 +42,18 @@ if(!isset($_SESSION['ROLE'])) {
         <ul class="list">
             <li class="item "><a href="main-dashboard.html" class="itemLink "><i class="fas fa-tachometer-alt" id="icon"></i>MAIN DASHBOARD</a></li>
             <li class="item "><a href="main-dashboard.html" class="itemLink "><i class="fas fa-tachometer-alt" id="icon"></i>DASHBOARD</a></li>
-            <li class="item"><a href="hospital-dashboard.html" class="itemLink"><i class="fas fa-MONEY" id="icon"></i>SALES</a>
-            <li class="item"><a href="addstock.php" class="hov itemLink" ><i class="fas fa-product-hunt" id="icon"></i>STOCK IN<i class="fas fa-angle-down" id="angles"></i></a>
+            <li class="item"><a href="viewsales.php" class="itemLink"><i class="fas fa-product" id="icon"></i>SALES     <i class="fas fa-angle-right" id="angles"></i></a></li>
+            <li class="item"><a href="viewstock.php" class="hov itemLink" ><i class="fas fa-product-hunt" id="icon"></i>STOCK IN<i class="fas fa-angle-down" id="angles"></i></a>
               <ul class="sublist">
-                <li class="item"><a href="addstock.php" class="sublink"><i class="fas fa-users" id="icon"></i>Add New</a></li>
-                <li class="item"><a href="viewstock.php" class="hov sublink"><i class="fas fa-users" id="icon"></i>View Stock</a></li>
+                <li class="item"><a href="addstock.php" class="sublink"><i class="fas fa-plus-circle" id="icon"></i>Add New</a></li>
+                <li class="item"><a href="viewstock.php" class="hov sublink"><i class="fas fa-eye" id="icon"></i>View Stock</a></li>
               </ul>
             </li>
-            <li class="item"><a href="users.html" class="itemLink"><i class="fas fa-users" id="icon"></i>LOW STOCK</a></li>
-            <li class="item"><a href="users.html" class="itemLink"><i class="fas fa-users" id="icon"></i>PHARMACY</a></li>
-            <li class="item"><a href="users.html" class="itemLink"><i class="fas fa-users" id="icon"></i>EXPIRED STOCK</a></li>
-            <li class="item"><a href="users.html" class="itemLink"><i class="fas fa-users" id="icon"></i>ACCOUNT</a></li>
-            <li class="item"><a href="logout.html" class="itemLink"><i class="fas fa-sign-out-alt" id="icon"></i>LOg Out</a></li>
+            <li class="item"><a href="#" class="itemLink"><i class="fas fa-users" id="icon"></i>LOW STOCK</a></li>
+            <li class="item"><a href="#" class="itemLink"><i class="fas fa-users" id="icon"></i>PHARMACY</a></li>
+            <li class="item"><a href="#" class="itemLink"><i class="fas fa-users" id="icon"></i>EXPIRED STOCK</a></li>
+            <li class="item"><a href="#" class="itemLink"><i class="fas fa-users" id="icon"></i>ACCOUNT</a></li>
+            <li class="item"><a href="logout.php" class="itemLink"><i class="fas fa-sign-out-alt" id="icon"></i>LOg Out</a></li>
 
         </ul>
     </div> 
